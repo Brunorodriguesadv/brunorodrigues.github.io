@@ -6,59 +6,60 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Home</title>
 
-    <!-- Link para a fonte Calibri -->
     <link href="https://fonts.googleapis.com/css?family=Calibri&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/style.css">
     
-    <!-- Script externo -->
     <script src="https://brunorodrigues.herokuapp.com/assets/modules/channel-web/inject.js"></script>
     
     <style>
         /* Estilos gerais */
         body {
             font-family: 'Calibri', sans-serif;
-            font-size: 14px; /* Aumentando o tamanho da fonte para melhor legibilidade */
+            font-size: 16px; /* Aumentando o tamanho da fonte para melhor legibilidade */
             margin: 0;
             padding: 0;
+            height: 100vh; /* Garante que o corpo da página ocupe toda a altura da tela */
+        }
+
+        header {
+            background-color: #f8f8f8; /* Cor de fundo do cabeçalho */
+            padding: 10px 0; /* Espaçamento interno do cabeçalho */
         }
 
         .container {
-            max-width: 100%; /* Largura máxima do container */
-            margin: 0; /* Remove a margem */
-            padding: 20px; /* Espaçamento interno */
-            display: flex; /* Alinha elementos no container */
+            display: flex; /* Alinha os elementos lado a lado */
             justify-content: center; /* Centraliza os elementos */
-            flex-direction: column; /* Alinha verticalmente */
-            height: 100vh; /* Altura da tela inteira */
+            align-items: center; /* Alinha verticalmente ao centro */
+            height: 100%; /* Altura total */
+            padding: 20px; /* Espaçamento interno */
         }
 
         .super-card {
             display: flex; /* Alinha imagem e texto lado a lado */
-            align-items: flex-start; /* Alinha ao topo */
             margin-top: 20px;
+            width: 100%; /* Faz o super-card ocupar toda a largura */
+            max-width: 1200px; /* Largura máxima do cartão */
             border: 1px solid #ccc; /* Borda para separar visualmente */
             padding: 20px; /* Aumentando o espaçamento interno da super-card */
-            flex: 1; /* Faz o super-card ocupar o espaço restante */
         }
 
         .super-card-img {
-            max-width: 40%; /* Aumentando a largura máxima da área da imagem */
+            flex: 1; /* A imagem ocupa um espaço flexível */
             margin-right: 20px; /* Espaço entre imagem e texto */
         }
 
         .super-card-img img {
             width: 100%; /* Faz a imagem ocupar toda a largura do contêiner */
             height: auto; /* Mantém a proporção da imagem */
-            max-height: 300px; /* Altura máxima para controlar o tamanho da imagem */
+            max-height: 400px; /* Altura máxima para controlar o tamanho da imagem */
         }
 
         .super-card-text {
-            flex: 1; /* Faz o texto ocupar o espaço restante */
+            flex: 2; /* O texto ocupa um espaço maior em relação à imagem */
         }
 
-        header {
-            background-color: #f8f8f8; /* Cor de fundo do cabeçalho */
-            padding: 10px 0; /* Espaçamento interno do cabeçalho */
+        .super-card-text p {
+            margin: 0; /* Remove margem do parágrafo */
         }
 
         nav ul {
@@ -76,7 +77,7 @@
     <header>
         <div class="container">
             <a href="https://brunorodrigues.github.io" class="branch">
-                <img src="img/logo.png" alt="Minha logo" title="Nome da minha logo">
+                <img src="img/logo.png" alt="Minha logo" title="Nome da minha logo" style="max-height: 50px;"> <!-- Limita a altura da logo -->
             </a>
             <nav class="menu">
                 <ul>
