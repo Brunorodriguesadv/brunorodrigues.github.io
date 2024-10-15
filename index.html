@@ -6,13 +6,61 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Home</title>
 
-    <!-- Link para a fonte Roboto -->
-    <link href="https://fonts.googleapis.com/css?family=Roboto:400,700&display=swap" rel="stylesheet">
-    <!-- Link para o CSS personalizado -->
+    <!-- Link para a fonte Calibri -->
+    <link href="https://fonts.googleapis.com/css?family=Calibri&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/style.css">
     
     <!-- Script externo -->
     <script src="https://brunorodrigues.herokuapp.com/assets/modules/channel-web/inject.js"></script>
+    
+    <style>
+        /* Estilos gerais */
+        body {
+            font-family: 'Calibri', sans-serif;
+            font-size: 10px; /* Tamanho da fonte */
+            margin: 0;
+            padding: 0;
+        }
+
+        .container {
+            max-width: 1200px; /* Largura máxima do container */
+            margin: 0 auto; /* Centraliza o container */
+            padding: 20px; /* Espaçamento interno */
+        }
+
+        .super-card {
+            display: flex; /* Alinha elementos lado a lado */
+            align-items: center; /* Alinha verticalmente ao centro */
+            margin-top: 20px;
+            border: 1px solid #ccc; /* Borda para separar visualmente */
+            padding: 10px; /* Espaçamento interno da super-card */
+        }
+
+        .super-card-img img {
+            max-width: 200px; /* Tamanho máximo da imagem */
+            height: auto; /* Mantém proporção da imagem */
+            margin-right: 20px; /* Espaço entre imagem e texto */
+        }
+
+        .super-card-text {
+            flex: 1; /* Faz o texto ocupar o espaço restante */
+        }
+
+        header {
+            background-color: #f8f8f8; /* Cor de fundo do cabeçalho */
+            padding: 10px 0; /* Espaçamento interno do cabeçalho */
+        }
+
+        nav ul {
+            list-style: none; /* Remove marcadores da lista */
+            padding: 0; /* Remove preenchimento padrão */
+        }
+
+        nav ul li {
+            display: inline; /* Itens do menu lado a lado */
+            margin-right: 15px; /* Espaço entre itens do menu */
+        }
+    </style>
 </head>
 <body>
     <header>
