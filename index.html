@@ -30,16 +30,20 @@
 
         .super-card {
             display: flex; /* Alinha elementos lado a lado */
-            align-items: center; /* Alinha verticalmente ao centro */
+            align-items: flex-start; /* Alinha ao topo */
             margin-top: 20px;
             border: 1px solid #ccc; /* Borda para separar visualmente */
             padding: 10px; /* Espaçamento interno da super-card */
         }
 
-        .super-card-img img {
-            max-width: 200px; /* Tamanho máximo da imagem */
-            height: auto; /* Mantém proporção da imagem */
+        .super-card-img {
+            max-width: 200px; /* Tamanho máximo da área da imagem */
             margin-right: 20px; /* Espaço entre imagem e texto */
+        }
+
+        .super-card-img img {
+            width: 100%; /* Faz a imagem ocupar toda a largura do contêiner */
+            height: auto; /* Mantém a proporção da imagem */
         }
 
         .super-card-text {
