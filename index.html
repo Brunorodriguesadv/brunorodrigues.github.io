@@ -17,27 +17,32 @@
         /* Estilos gerais */
         body {
             font-family: 'Calibri', sans-serif;
-            font-size: 10px; /* Tamanho da fonte */
+            font-size: 12px; /* Aumentando o tamanho da fonte para melhor legibilidade */
             margin: 0;
             padding: 0;
         }
 
         .container {
-            max-width: 1200px; /* Largura máxima do container */
-            margin: 0 auto; /* Centraliza o container */
+            max-width: 100%; /* Largura máxima do container */
+            margin: 0; /* Remove a margem */
             padding: 20px; /* Espaçamento interno */
+            display: flex; /* Alinha elementos no container */
+            justify-content: center; /* Centraliza os elementos */
+            flex-direction: column; /* Alinha verticalmente */
+            height: 100vh; /* Altura da tela inteira */
         }
 
         .super-card {
-            display: flex; /* Alinha elementos lado a lado */
+            display: flex; /* Alinha imagem e texto lado a lado */
             align-items: flex-start; /* Alinha ao topo */
             margin-top: 20px;
             border: 1px solid #ccc; /* Borda para separar visualmente */
             padding: 10px; /* Espaçamento interno da super-card */
+            flex: 1; /* Faz o super-card ocupar o espaço restante */
         }
 
         .super-card-img {
-            max-width: 200px; /* Tamanho máximo da área da imagem */
+            max-width: 30%; /* Tamanho máximo da área da imagem */
             margin-right: 20px; /* Espaço entre imagem e texto */
         }
 
